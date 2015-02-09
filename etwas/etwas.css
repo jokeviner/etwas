@@ -1,0 +1,35 @@
+html,body{
+	width:100%;
+	height: 100%;
+	padding:0;
+	margin: 0;
+}
+.wrapper{
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+
+}
+.pages{
+	width: 100%;
+	-webkit-transition: all ease 500ms;
+	transition: all ease 500ms;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.pages.drag{
+	-webkit-transition: none !important;
+	transition: none !important;
+}
+.page{
+	position: relative;
+	overflow: hidden;
+	background-size:100%; 
+	background-repeat:no-repeat; 
+}
+.page div{
+	position: absolute;
+}
+.page img{
+	width: 100%;
+}
